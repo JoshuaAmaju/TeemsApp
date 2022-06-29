@@ -32,6 +32,9 @@
       "@global/*": [
         "./global/*"
       ],
+      "@screens/*": [
+        "./screens/*"
+      ],
       "@utils/*": [
         "./global/utils/*"
       ],
