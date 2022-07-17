@@ -62,7 +62,7 @@ export const config = createMachine<Ctx, Events, States>(
     initial: State.unknown,
 
     context: {
-      type: Type.Unknown,
+      type: Type.unknown,
     },
 
     states: {
@@ -123,7 +123,7 @@ export const config = createMachine<Ctx, Events, States>(
   },
   {
     actions: {
-      reset: assign(_ => ({type: Type.Unknown})),
+      reset: assign(_ => ({type: Type.unknown})),
       mergeContext: assign((_, {data}: any) => ({..._, ...data})),
     },
     services: {

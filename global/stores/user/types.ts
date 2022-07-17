@@ -1,7 +1,7 @@
 export enum Type {
-  Child = 'child',
-  Parent = 'parent',
-  Unknown = 'unknown',
+  child = 'child',
+  parent = 'parent',
+  unknown = 'unknown',
 }
 
 export type Info = {

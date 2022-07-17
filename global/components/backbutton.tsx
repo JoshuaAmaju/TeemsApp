@@ -1,7 +1,7 @@
 import {ChevronLeftCircle} from '@exports/icons';
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {Icon, IconButton} from 'native-base';
+import {IconButton} from 'react-native-paper';
 
 export default function BackButton() {
   const nav = useNavigation();
@@ -10,15 +10,9 @@ export default function BackButton() {
     <IconButton
       size={25}
       onPress={() => nav.goBack()}
-      icon={
-        <Icon
-          as={(props: any) => {
-            console.log(props);
-
-            return <ChevronLeftCircle />;
-          }}
-        />
-      }
+      icon={({size, color}) => (
+        <ChevronLeftCircle width={size} color={color} height={size} />
+      )}
     />
   );
 }

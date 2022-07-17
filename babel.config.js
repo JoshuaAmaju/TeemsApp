@@ -15,6 +15,7 @@ module.exports = {
           '.json',
         ],
         alias: {
+          '@lib': ['./lib/'],
           '@global': ['./global/'],
           '@screens': ['./screens/'],
           '@exports': ['./exports/'],
